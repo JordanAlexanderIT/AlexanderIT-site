@@ -1,0 +1,184 @@
+body {
+  font-family: "montserrat", Arial, sans-serif;
+  margin: 0;
+}
+.page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f5f6fa;
+}
+.navbar {
+  height: 8vh;
+  width: 99.9vw;
+  /* border: 1px dotted red; */
+  display: flex;
+}
+.navbar-menu {
+  /* border: 1px dotted red; */
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55vw;
+  height: 65%;
+  border-radius: 8px;
+  margin: auto;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.navbar-menu-button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.navbar-menu div:hover {
+  background-color: white;
+  color: black;
+}
+.main-content {
+  height: 82vh;
+  width: 99.9vw;
+  /* border: 1px dotted blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-namebox {
+  /* border: 1px dotted blue; */
+  font-size: 3rem;
+  /* Gone on mobile */
+  margin-right: 55vw;
+  height: 10%;
+}
+.main-job-titles {
+  /* border: 1px dotted blue; */
+  font-size: 3rem;
+  /* Gone on mobile */
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+.main-social-media {
+  /* border: 1px dotted blue; */
+  display: flex;
+  width: 30vw;
+  justify-content: space-around;
+  height: 10%;
+}
+
+/* Placeholder style to guess how big these will show up */
+
+.main-social-media div {
+  height: 60px;
+  width: 60px;
+  background-color: gray;
+  text-align: center;
+  margin: 1rem 0;
+  border-radius: 6px;
+  border: 2px solid black;
+}
+.dot {
+  height: 15rem;
+  width: 15rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.portrait {
+  height: 15rem;
+  width: 15rem;
+  align-self: center;
+}
+.portrait img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+.footer {
+  height: 10vh;
+  /* border: 1px dotted green; */
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+}
+.footer-top {
+}
+.footer-bottom {
+  margin-bottom: 2vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-namebox {
+    font-size: 2rem;
+  }
+  .main-job-titles {
+    font-size: 2rem;
+  }
+  .main-job-titles-text {
+    font-size: 1.5rem;
+    height: 10%;
+  }
+  .navbar {
+    display: none;
+  }
+  .main-content {
+    /* For super-tiny screens */
+    height: 80%;
+    width: 99%;
+  }
+  .main-namebox {
+    margin-right: 0;
+  }
+  .main-job-titles {
+    width: 100%;
+  }
+  .main-social-media {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .footer {
+    height: 10%;
+  }
+  .footer-bottom {
+    margin-bottom: 0;
+  }
+}
+@media screen and (orientation: landscape) and (max-height: 411px) {
+  .navbar {
+    display: none;
+  }
+  .main-namebox {
+    font-size: 2rem;
+  }
+  .main-job-titles {
+    font-size: 2rem;
+  }
+  .portrait img {
+    height: 90%;
+    max-height: 10rem;
+    max-width: 10rem;
+  }
+  .main-social-media div {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+}
+/* @media only screen and (min-width: 768px) {
+  .main-social-media {
+    margin-top: 15rem;
+  }
+} */
